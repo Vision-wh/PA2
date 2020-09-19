@@ -20,6 +20,7 @@
 #include "data-mov/pop.h"
 #include "arith/cmp.h"
 #include "crj/je.h"
+#include "crj/ret.h"
 
 #include "logic/and.h"
 #include "logic/or.h"
