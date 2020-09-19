@@ -4,5 +4,15 @@
 #include "common.h"
 #include "memory/memory.h"
 #include "cpu/reg.h"
+#include <elf.h>
+
+
+
+
+
+
+
+
+
 
 #endif

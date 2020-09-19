@@ -17,6 +17,9 @@
 #include "data-mov/push.h"
 #include "data-mov/pusha.h"
 #include "logic/test.h"
+#include "data-mov/pop.h"
+#include "arith/cmp.h"
+#include "crj/je.h"
 
 #include "logic/and.h"
 #include "logic/or.h"
