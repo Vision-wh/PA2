@@ -3,8 +3,12 @@
 #include "data-mov/mov.h"
 #include "data-mov/xchg.h"
 #include "data-mov/movext.h"
+#include "data-mov/movzx.h"
+#include "data-mov/movsx.h"
 #include "data-mov/cltd.h"
+#include "data-mov/cwtl.h"
 #include "data-mov/leave.h"
+#include "data-mov/xchg.h"
 
 #include "arith/dec.h"
 #include "arith/inc.h"
@@ -25,7 +29,9 @@
 #include "arith/sbb.h"
 #include "crj/je.h"
 #include "crj/ret.h"
-#incldue "logic/setcc.h"
+#include "crj/jcc.h"
+#include "crj/jmp.h"
+#include "logic/setcc.h"
 #include "logic/and.h"
 #include "logic/or.h"
 #include "logic/not.h"
@@ -36,7 +42,10 @@
 #include "logic/shrd.h"
 
 #include "string/rep.h"
-
+#include "string/movs.h"
+#include "string/stos.h"
+#include "string/lods.h"
+#include "string/scas.h"
 #include "misc/misc.h"
 
 #include "special/special.h"
