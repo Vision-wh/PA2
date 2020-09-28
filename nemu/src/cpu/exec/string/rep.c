@@ -1,3 +1,4 @@
+
 #include "cpu/exec/helper.h"
 
 make_helper(exec);
@@ -26,6 +27,10 @@ make_helper(rep) {
 				);
 
 			/* TODO: Jump out of the while loop if necessary. */
+			if ((ops_decoded.opcode == 0xa6	
+				|| ops_decoded.opcode == 0xa7	
+				|| ops_decoded.opcode == 0xae	
+				|| ops_decoded.opcode == 0xaf) && cpu.ZF == 0)break;
 
 		}
 		len = 1;
@@ -53,7 +58,10 @@ make_helper(repnz) {
 			  );
 
 		/* TODO: Jump out of the while loop if necessary. */
-
+		if ((ops_decoded.opcode == 0xa6	
+				|| ops_decoded.opcode == 0xa7	
+				|| ops_decoded.opcode == 0xae	
+				|| ops_decoded.opcode == 0xaf) && cpu.ZF == 1)break;
 
 	}
 
