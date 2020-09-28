@@ -48,6 +48,7 @@
 #include "string/movsw.h"
 #include "string/movsb.h"
 #include "string/movzb.h"
+#include "string/movzw.h"
 #include "string/scas.h"
 #include "misc/misc.h"
 
