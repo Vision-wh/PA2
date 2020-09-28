@@ -46,6 +46,8 @@
 #include "string/stos.h"
 #include "string/lods.h"
 #include "string/movsw.h"
+#include "string/movsb.h"
+#include "string/movzb.h"
 #include "string/scas.h"
 #include "misc/misc.h"
 
